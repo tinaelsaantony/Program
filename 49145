@@ -1,0 +1,24 @@
+﻿CREATE TABLE EMPLOYEE
+(
+ code CHAR(4),
+name VARCHAR(20),
+designation VARCHAR(30),
+dob DATE,
+salary INTEGER
+);
+
+
+INSERT INTO EMPLOYEE (code , name , designation , dob , salary) VALUES
+    ('e1' ,'Tina','CEO' ,'18-07-1992',150000),
+    ('e2','Diya','STAFF','09-11-1995',12000) ;
+   
+SELECT * FROM EMPLOYEE;
+
+
+UPDATE EMPLOYEE
+SET salary =170000
+WHERE code ='e1';
+
+
+DELETE FROM EMPLOYEE
+WHERE code='e2';
